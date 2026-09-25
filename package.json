@@ -2,14 +2,41 @@
   "name": "electron_playwright_test_suite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "electron .",
+    "test": "playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "dependencies": {
+    "@internationalized/date": "^3.12.4",
+    "@nuxt/eslint": "^1.17.0",
+    "@nuxt/image": "^2.1.0",
+    "@nuxt/scripts": "^1.3.9",
+    "@nuxt/ui": "^4.11.2",
+    "@tanstack/table-core": "8.21.3",
+    "@unovis/ts": "^1.7.0",
+    "@unovis/vue": "^1.7.0",
+    "@vueuse/core": "14.4.0",
+    "@vueuse/nuxt": "14.4.0",
+    "date-fns": "^4.4.0",
+    "nuxt": "^4.5.2",
+    "scule": "^1.3.0",
+    "vue": "^3.5.43",
+    "zod": "^4.6.5"
+  },
   "devDependencies": {
+    "@iconify-json/lucide": "^1.2.134",
+    "@iconify-json/simple-icons": "^1.2.96",
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.6.2"
+    "@types/node": "^26.6.2",
+    "electron": "^44.4.5"
   }
 }
